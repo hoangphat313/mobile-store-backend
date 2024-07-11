@@ -24,8 +24,8 @@ const refreshTokenJwtService = (token) => {
                     })
                 }
                 const access_token = await generalAccessToken({
-                    id: user.id,
-                    isAdmin: user.isAdmin
+                    id: user?.id,
+                    isAdmin: user?.isAdmin
                 })
                 resolve({
                     status: 'OK',
