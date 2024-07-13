@@ -8,7 +8,7 @@ router.get('/get-all-order/:id', authUserMiddleWare, OrderController.getAllOrder
 router.delete('/cancel-order/:id', authUserMiddleWare, OrderController.cancelOrderDetails)//authUserMiddleWare
 router.get('/get-details-order/:id', OrderController.getDetailsOrder)
 //
-router.get('/get-all-order', authMiddleWare, OrderController.getAllOrder) //authMiddleWare
+router.get('/get-all-order', authUserMiddleWare, OrderController.getAllOrder) //authMiddleWare
 
 
 module.exports = router
